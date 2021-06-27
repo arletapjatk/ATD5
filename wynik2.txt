@@ -1,0 +1,12 @@
+HTTP1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGBHBVI8+xkYugpfe17/PCiLKY+MIZ7O8BZfQpB=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23903>; rel="up"
+Last-Modified: Sun, 27 Jun 2021 11:39:31 GMT
+ETag: "5s6F7J519wKa8YQL2PkYWq"
+Date: Sun, 27 Jun 2021 11:39:41 GMT
+Content-Type: application/json
+Content-Length: 120
+
+{"name": "Arleta", "surname": "Bujno", "age": 25, "liveInWarsaw": false}

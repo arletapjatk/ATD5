@@ -1,0 +1,33 @@
+1)
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Arleta", "surname": "Bujno", "age": 26, "liveInWarsaw": false}' http://localhost:8098/buckets/s23903/keys/arleta
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Maja", "surname": "Krasko", "age": 22, "liveInWarsaw": true}' http://localhost:8098/buckets/s23903/keys/maja
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Tomasz", "surname": "Beksinski", "age": 41, "liveInWarsaw": false}' http://localhost:8098/buckets/s23903/keys/tomasz
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Iwona", "surname": "Kalinowska", "age": 19, "liveInWarsaw": false}' http://localhost:8098/buckets/s23675/keys/iwona
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Kamil", "surname": "Lis", "age": 35, "liveInWarsaw": true}' http://localhost:8098/buckets/s23675/keys/kamil
+
+2)
+curl -i -XGET  http://localhost:8098/buckets/s23903/keys/tomasz
+
+3)
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Kamil", "surname": "Lis", "age": 35, "liveInWarsaw": true, "Student": false}' http://localhost:8098/buckets/s23903/keys/kamil
+
+4)
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Iwona", "surname": "Kalinowska", "age": 19}' http://localhost:8098/buckets/s23903/keys/iwona
+
+5)
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Maja", "surname": "Krasko", "age": 29, "liveInWarsaw": true}' http://localhost:8098/buckets/s23903/keys/maja
+
+6)
+curl -i -XDELETE hhttp://localhost:8098/buckets/s23903/keys/tomasz
+
+7)
+curl -i -XGET  http://localhost:8098/buckets/s23903/keys/piotr
+
+8)
+curl -i -XPOST -H "Content-Type: application/json" -d '{"likesdogs": true}' http://localhost:8098/buckets/s23903/keys
+
+9) 
+curl -i -XGET  http://localhost:8098/buckets/s23903/keys/6dqQo5PBKS1hMVLnPQqFDqyEZga
+
+10)
+curl -i -XDELETE http://localhost:8098/buckets/s23903/keys/6dqQo5PBKS1hMVLnPQqFDqyEZga
